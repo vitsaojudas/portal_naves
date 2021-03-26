@@ -2,51 +2,144 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+      }
+      form,
+      input {
+        border: none;
+        border-radius: 0%;
+        border-bottom: thin solid #b7bdc5;
+      }
+      .bg-grey {
+        background-color: #30414e;
+      }
+      .text-grey {
+        color: #30414e;
+      }
+      .bg-aqua {
+        background-color: #1bbc9b;
+      }
+    </style>
+
     <title>Portal de Viagens</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="img/nave.png" />
   </head>
   <body>
     <main>
-      <section id="header">
-        <header>
-          <p>PORTAL DE VIAGENS</p>
-        </header>
-        <article>
-          <a href="">DESTINOS</a>
-          <a href="">VALORES</a>
-          <a href="">CONTATO</a>
-        </article>
-      </section>
-      <div id="conteudo">
-        <article>
+      <div
+        class="row bg-grey text-white justify-content-center"
+        style="height: 10vh"
+      >
+        <div
+          class="col-12 col-sm-4 col-md-4 col-lg-5 text-center align-self-center text-white"
+        >
+          <p class="h4"><strong> PORTAL DE VIAGENS </strong></p>
+        </div>
+
+        <div
+          class="col-2 col-sm-2 col-md-2 col-lg-2 h6 align-self-center offset-1"
+        >
+          <a class="text-white" href=""><strong> DESTINOS </strong> </a>
+        </div>
+
+        <div class="col-2 col-sm-2 col-md-2 col-lg-2 h6 align-self-center">
+          <a class="text-white" href=""><strong> VALORES </strong> </a>
+        </div>
+
+        <div class="col-2 col-sm-2 col-md-2 col-lg-2 h6 align-self-center">
+          <a class="text-white" href=""><strong> CONTATO </strong> </a>
+        </div>
+      </div>
+
+      <div class="row bg-aqua text-white py-5 px-5">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
           <img
             src="img/nave.png"
-            alt="Nave espacial Rick e Morty"
+            alt="rick and morty spacecraft"
             width="50%"
+            class="rounded mx-auto d-block"
           />
-        </article>
-        <h1>AS MELHORES NAVES!</h1>
-        <article>
-          <p>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 my-3">
+          <p class="h2 text-white text-center">
+            <strong>AS MELHORES NAVES!</strong>
+          </p>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 mt-3">
+          <p class="text-white text-center">
             Preços especiais para planetas da federação galáctica. Visite ainda
             universos, dimensões e realizadades alternativas!
           </p>
-        </article>
+        </div>
       </div>
-      <section id="formulario">
-        <h2>CONSULTAR VALORES</h2>
-        <article>
+
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 my-5">
+          <p class="h3 text-grey text-center">
+            <strong>CONSULTAR VALORES</strong>
+          </p>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 mt-3">
           <form>
-            <input type="text" placeholder="Origem" />
-            <input type="text" placeholder="Destino" />
-            <input type="text" placeholder="Data de partida" />
-            <input type="text" placeholder="Data de volta" />
-            <button type="button" value="">Consultar</button>
+            <input
+              type="text"
+              placeholder="Origem"
+              class="col-6 offset-3 px-0 py-4"
+            />
+            <input
+              type="text"
+              placeholder="Destino"
+              class="col-6 offset-3 px-0 py-4"
+            />
+            <input
+              type="text"
+              placeholder="Data de partida"
+              class="col-6 offset-3 px-0 py-4"
+            />
+            <input
+              type="text"
+              placeholder="Data de volta"
+              class="col-6 offset-3 px-0 py-4"
+            />
+
+            <button
+              type="button"
+              value=""
+              class="col-2 offset-3 my-4 btn bg-aqua text-white"
+              style="height: 7vh"
+            >
+              Consultar
+            </button>
           </form>
-        </article>
-      </section>
+        </div>
+      </div>
     </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
